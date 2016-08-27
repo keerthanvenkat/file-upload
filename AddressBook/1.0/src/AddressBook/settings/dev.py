@@ -131,7 +131,7 @@ STATIC_ROOT = "/var/www/html/project_static"
 
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_HOST_USER = 'tuxfux.django@gmail.com'
-EMAIL_HOST_PASSWORD = 'tuxfux.django123'
+EMAIL_HOST_PASSWORD = '*********'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 
