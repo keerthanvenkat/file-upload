@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% load crispy_forms_tags %}
+{% block title  %} This is the address page {% endblock %}
+
+{% block content %}
+<div class="row">
+<div class="col-xs-4"></div>
+<div class="col-xs-4">
+        <h1> Person Details </h1>
+        <form role="form" action="" method="post">
+       {% csrf_token %}
+       {{ form|crispy }}
+        <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+</div>
+</div>
+{% endblock %}
