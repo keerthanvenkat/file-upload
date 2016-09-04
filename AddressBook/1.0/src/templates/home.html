@@ -1,0 +1,87 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+<style>
+{% block style %}
+
+.text-align-center
+{
+  text-align: center;
+  font-family: lead;
+  font-size: larger;
+}
+
+.container .jumbotron
+{
+  color: #09571A;
+
+}
+
+.navbar-default .navbar-nav > li > a 
+{
+  color: #0F0C0C;
+}
+
+
+.navbar-default .navbar-nav > li > a:hover 
+{
+  color: #0F2004;
+}
+
+/*.body .navbar-static-top
+{
+  margin-bottom: 1px;
+}*/
+
+
+
+{% endblock %}
+</style>
+
+{% block title  %} My Project Address Book {% endblock %}
+{% block jumbtron %}
+
+
+      <!-- Main component for a primary marketing message or call to action -->
+
+              <div class="jumbotron">
+                <div class="row">
+                    <div class="col-md-8">
+                          <h1>Welcome to the Tuxfux world</h1>
+                          <p>We are more into the opensource solutions for multiple projects.
+                            We also deal with python,django,openstack and related worlds.</p>
+                          <p>
+                            <a class="btn btn-lg btn-primary" href="../../components/#navbar" role="button">Click here to read more.</a>
+                          </p>
+                    </div>
+                    <div class="col-md-4">
+                    <iframe width="300" height="250" src="https://www.youtube.com/embed/C7ojH-DXqvs" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+
+{% endblock %}
+
+{% block content %}
+<div class="row">
+  <div class="col-md-3" >
+  <p class="text-align-center" class="lead"> This is the python content.</p>
+  <img src='{% static "address/image/python.png" %}' height="200px" width="200px" />
+  </div>
+  <div class="col-md-3" >
+  <p class="text-align-center" class="lead"> This is the django content.</p>
+  <img src='{% static "address/image/django.png" %}' height="200px" width="200px" />
+  </div>
+  <div class="col-md-3">
+  <p class="text-align-center" class="lead"> This is the devops content.</p>
+  <img src='{% static "address/image/devops.png" %}' height="200px" width="200px" />
+  </div>
+  <div class="col-md-3">
+  <p class="text-align-center" class="lead"> This is the openstack content.</p>
+  <img src='{% static "address/image/openstack.png" %}' height="200px" width="200px" />
+  </div>
+</div>
+{% endblock %}
+
+
+

@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block title %} My first address page {% endblock %}
+
+
+{% block content %} 
+<div class="address">
+			<table class="table table-striped">
+			<tr>
+				<td>NAME</td>
+				<td>EMAIL</td>
+				<td>AGE</td>
+			
+			</tr>
+				{% for value in namesdb %}
+				<tr>
+
+					<td>{{ value.name }}</td>
+					<td>{{ value.email }}</td>
+					<td>{{ value.age }}</td>
+				</tr>
+				{% endfor %}
+			</table>
+</div>
+{%  endblock %}
