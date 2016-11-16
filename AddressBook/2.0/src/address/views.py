@@ -95,3 +95,7 @@ def address(request):
 
 def thanks(request):
 	return HttpResponse("Thank you for submitting your details.")
+
+def home(request):
+	context = {}
+	return render(request,'home.html',context)

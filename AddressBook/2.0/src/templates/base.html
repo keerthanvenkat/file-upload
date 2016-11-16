@@ -1,14 +1,19 @@
-<html>
-<title> {% block title  %}  {% endblock %}</title>
-<body>
-  <div id="header">
-    <h1> TUXFUX : work is worship </h1>
-  </div>
-  <div id="content">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% include 'base_head.html' %}
+  </head>
+
+  <body>
+
+    {% include 'navbar.html' %}
     {% block content %} {% endblock %}
-  </div>
-  <div id="footer">
-    <h1> @copyright 2016 </h1>
-  </div>
-</body>
-</html
+    <div class="container">
+        {% block 'jumbotron' %}
+        {% endblock %}
+    </div> <!-- /container -->
+
+    {% include 'base_footer.html' %}
+
+  </body>
+</html>

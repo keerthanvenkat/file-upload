@@ -1,6 +1,6 @@
 from django.conf.urls import include, url
 from django.contrib import admin
-from address.views import test_html,myaddress,test_html1,contact,thanks,address
+from address.views import test_html,myaddress,test_html1,contact,thanks,address,home
 
 urlpatterns = [
     # Examples:
@@ -15,4 +15,5 @@ urlpatterns = [
     url(r'^ContactForm/',contact,name="contact"),
     url(r'^AddressForm/',address,name="address"),
     url(r'^thanks/',thanks,name='thanks'),
+    url(r'^$',home,name='home'),
 ]
